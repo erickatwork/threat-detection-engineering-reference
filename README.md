@@ -1,6 +1,6 @@
 # Detection Engineering Reference
 
-Frameworks, tools and ideas I find useful for detection engineering.
+Frameworks, tools and resources I find useful.
 
 ## Frameworks
 
@@ -44,6 +44,7 @@ Part of the Cyber Kill Chain. Defenders can measure the performance as well as t
 * Useful to keep in mind when prioritizing detection rules.
 
 ### 1-10-60 Rule
+
 [CrowdStrike](https://www.crowdstrike.com/blog/first-ever-adversary-ranking-in-2019-global-threat-report-highlights-the-importance-of-speed/) investigated, the average “breakout time” in 2017 was one hour and 58 minutes. Breakout time indicates how long it takes for an intruder to jump off the initial system (“beachhead”) they have compromised and move laterally to other machines within the network.
 
 * 1 minute to detect, 10 minutes to investigate and 60 minutes to remediate.
@@ -61,12 +62,20 @@ Part of the Cyber Kill Chain. Defenders can measure the performance as well as t
 
 ### ATT&CK
 
+[MITRE](https://attack.mitre.org/) ATT&CK is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. Enough have been written on this subject.
+
+### DeTT&CT
+
+[RRabobank CDC](https://github.com/rabobank-cdc/DeTTECT) DeTT&CT aims to assist blue teams in using ATT&CK to score and compare data log source quality, visibility coverage, detection coverage and threat actor behaviours.
+
+## Signatures
+
+* https://github.com/SigmaHQ/sigma/tree/master/rules
+* https://car.mitre.org/analytics/
+* https://github.com/splunk/security_content
+* https://github.com/elastic/detection-rules/tree/main/rules
 
 ## Notes
-
-* Building a detection program from scratch
-  * Evaluate the maturity and size of the company
-  * Atomic vs Behavior indicators - behavior has a longer ramp up time but offers better security.
 
 • Atomic - Atomic indicators are those which cannot be broken down into smaller parts and retain their meaning in the context of an intrusion. Typical examples here are IP addresses, email addresses, and vulnerability identifiers.
 • Computed - Computed indicators are those which are derived from data involved in an incident. Common computed indicators include hash values and regular expressions.
