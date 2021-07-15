@@ -75,6 +75,7 @@ Part of the Cyber Kill Chain. Defenders can measure the performance as well as t
 * https://github.com/splunk/security_content
 * https://github.com/elastic/detection-rules/tree/main/rules
 * https://docs.datadoghq.com/security_platform/default_rules/
+* https://github.com/airbnb/streamalert/tree/master/rules/community
 
 ## Notes
 
