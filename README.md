@@ -74,9 +74,10 @@ Part of the Cyber Kill Chain. Defenders can measure the performance as well as t
 * https://car.mitre.org/analytics/
 * https://github.com/splunk/security_content
 * https://github.com/elastic/detection-rules/tree/main/rules
+* https://docs.datadoghq.com/security_platform/default_rules/
 
 ## Notes
 
-• Atomic - Atomic indicators are those which cannot be broken down into smaller parts and retain their meaning in the context of an intrusion. Typical examples here are IP addresses, email addresses, and vulnerability identifiers.
-• Computed - Computed indicators are those which are derived from data involved in an incident. Common computed indicators include hash values and regular expressions.
-• Behavioral - Behavioral indicators are collections of computed and atomic indicators, often subject to qualification by quantity and possibly combinatorial logic. An example would be a statement such as ”the intruder would initially used a backdoor which generated network traffic matching [regular expression] at the rate of [some frequency] to [some IP address], and then replace it with one matching the MD5 hash [value] once access was established.”
+- Atomic - Atomic indicators are those which cannot be broken down into smaller parts and retain their meaning in the context of an intrusion. Typical examples here are IP addresses, email addresses, and vulnerability identifiers.
+- Computed - Computed indicators are those which are derived from data involved in an incident. Common computed indicators include hash values and regular expressions.
+- Behavioral - Behavioral indicators are collections of computed and atomic indicators, often subject to qualification by quantity and possibly combinatorial logic. An example would be a statement such as ”the intruder would initially used a backdoor which generated network traffic matching [regular expression] at the rate of [some frequency] to [some IP address], and then replace it with one matching the MD5 hash [value] once access was established.”
