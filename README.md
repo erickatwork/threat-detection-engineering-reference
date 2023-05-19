@@ -1,6 +1,28 @@
-# Detection Engineering Reference
+# Threat Detection Engineering Reference
 
-Frameworks, tools and resources I find useful.
+Frameworks, tools, and resources I find useful as a Threat Detection / Incident Response professional. Feel free to contribute.
+
+## Table of Contents
+
+* [Frameworks](#frameworks)
+  * [Incident Response Plan/Lifecycle](#incident-response-plan-lifecycle)
+  * [Cyber Kill Chain](#cyber-kill-chain)
+      - [Courses of Action Matrix](#courses-of-action-matrix)
+  * [Pyramid of Pain](#pyramid-of-pain)
+  * [1-10-60 Rule](#1-10-60-rule)
+  * [Cybersecurity Defense Maturity Scorecard](#cybersecurity-defense-maturity-scorecard)
+  * [Detection Engineering Maturity Matrix](#detection-engineering-maturity-matrix)
+  * [ATT&CK](#att-ck)
+  * [DeTT&CT](#dett-ct)
+  * [Detections-as-Code (DaC)](#detections-as-code--dac-)
+  * [Distributed Alerting (DA)](#distributed-alerting--da-)
+  * [Risk-Based Alerting (RBA)](#risk-based-alerting--rba-)
+  * [Purple Teaming](#purple-teaming)
+  * [Data Science](#data-science)
+  * [Threat Modeling](#threat-modeling)
+  * [Threat Inteligence](#threat-inteligence)
+* [Detection Rules / Signatures](#detection-rules---signatures)
+* [Notes](#notes)
 
 ## Frameworks
 
