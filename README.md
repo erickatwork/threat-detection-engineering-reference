@@ -5,28 +5,28 @@ Frameworks, tools, and resources I find useful as a Threat Detection / Incident 
 ## Table of Contents
 
 * [Frameworks](#frameworks)
-  * [Incident Response Plan/Lifecycle](#incident-response-plan-lifecycle)
+  * [Incident Response Lifecycle](#incident-response-lifecycle)
   * [Cyber Kill Chain](#cyber-kill-chain)
-      - [Courses of Action Matrix](#courses-of-action-matrix)
+    * [Courses of Action Matrix](#courses-of-action-matrix)
   * [Pyramid of Pain](#pyramid-of-pain)
   * [1-10-60 Rule](#1-10-60-rule)
   * [Cybersecurity Defense Maturity Scorecard](#cybersecurity-defense-maturity-scorecard)
   * [Detection Engineering Maturity Matrix](#detection-engineering-maturity-matrix)
-  * [ATT&CK](#att-ck)
-  * [DeTT&CT](#dett-ct)
-  * [Detections-as-Code (DaC)](#detections-as-code--dac-)
-  * [Distributed Alerting (DA)](#distributed-alerting--da-)
-  * [Risk-Based Alerting (RBA)](#risk-based-alerting--rba-)
+  * [ATT&CK](#attck)
+  * [DeTT&CT](#dettct)
+  * [Detections-as-Code (DaC)](#detections-as-code-dac)
+  * [Distributed Alerting (DA)](#distributed-alerting-da)
+  * [Risk-Based Alerting (RBA)](#risk-based-alerting-rba)
   * [Purple Teaming](#purple-teaming)
   * [Data Science](#data-science)
   * [Threat Modeling](#threat-modeling)
   * [Threat Inteligence](#threat-inteligence)
-* [Detection Rules / Signatures](#detection-rules---signatures)
+* [Detection Rules / Signatures](#detection-rules--signatures)
 * [Notes](#notes)
 
 ## Frameworks
 
-### Incident Response Plan/Lifecycle
+### Incident Response Lifecycle
 
 ![sans-incident-response-plan.jpg](images/sans-incident-response-plan.jpg)
 
