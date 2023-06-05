@@ -154,6 +154,7 @@ Threat intelligence is data that is collected, processed, and analyzed to unders
 * [Streamalert](https://github.com/airbnb/streamalert/tree/master/rules/community)
 * [Azure](https://github.com/Azure/Azure-Sentinel/tree/master/Solutions)
 * [Okta](https://sec.okta.com/shareddetections)
+* MacOS [LooBins macOS Binaries](https://www.loobins.io/)
 
 ## Notes
 
