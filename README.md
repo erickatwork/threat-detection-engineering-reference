@@ -156,6 +156,21 @@ Threat intelligence is data that is collected, processed, and analyzed to unders
 * [Okta](https://sec.okta.com/shareddetections)
 * MacOS [LooBins macOS Binaries](https://www.loobins.io/)
 
+## Resources
+* Detection Engineering
+  * https://github.com/infosecB/awesome-detection-engineering
+  * https://github.com/gracenolan/Notes/blob/master/interview-study-notes-for-security-engineering.md
+  * https://scrty.io/
+* IP/URL
+  * https://talosintelligence.com/reputation_center
+  * https://radar.cloudflare.com/scan
+  * https://whois.domaintools.com/
+  * https://virustotal.com/
+  * https://www.maxmind.com/en/geoip-databases
+  * https://urlscan.io/
+* Browser Extension
+  * https://crxcavator.io/
+
 ## Notes
 
 * Indicator types
