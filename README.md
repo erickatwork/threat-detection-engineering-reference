@@ -170,6 +170,9 @@ Threat intelligence is data that is collected, processed, and analyzed to unders
   * https://urlscan.io/
 * Browser Extension
   * https://crxcavator.io/
+* OSINT
+  * https://start.me/p/L1rEYQ/osint4all
+  * https://urlscan.io/ 
 
 ## Notes
 
