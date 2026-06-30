@@ -1,6 +1,16 @@
 # Threat Detection Engineering Reference
 
-Frameworks, tools, and resources I find useful as a Threat Detection / Incident Response professional. Feel free to contribute.
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Stars](https://img.shields.io/github/stars/erickatwork/threat-detection-engineering-reference?style=social)](https://github.com/erickatwork/threat-detection-engineering-reference/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/erickatwork/threat-detection-engineering-reference)](https://github.com/erickatwork/threat-detection-engineering-reference/commits/main)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+> A curated, opinionated reference of the frameworks, tools, and resources that matter most in **threat detection engineering and incident response** — distilled into one page you can actually skim.
+
+**Who this is for:** detection engineers, SOC analysts, threat hunters, and security leaders who want a fast mental map of the field — the core frameworks (Kill Chain, ATT&CK, Pyramid of Pain), the detection-as-code ecosystem, ready-to-use detection rule sources, and the best external references — without wading through a dozen blog posts.
+
+⭐ **Find this useful? Star the repo to bookmark it and help others discover it.** Contributions welcome — see [Contributing](#contributing).
 
 ## Table of Contents
 
@@ -20,9 +30,11 @@ Frameworks, tools, and resources I find useful as a Threat Detection / Incident 
   * [Purple Teaming](#purple-teaming)
   * [Data Science](#data-science)
   * [Threat Modeling](#threat-modeling)
-  * [Threat Inteligence](#threat-inteligence)
+  * [Threat Intelligence](#threat-intelligence)
 * [Detection Rules / Signatures](#detection-rules--signatures)
+* [Resources](#resources)
 * [Notes](#notes)
+* [Contributing](#contributing)
 
 ## Frameworks
 
@@ -30,7 +42,7 @@ Frameworks, tools, and resources I find useful as a Threat Detection / Incident 
 
 ![sans-incident-response-plan.jpg](images/sans-incident-response-plan.jpg)
 
-[SANS](docs/sans-incident-handlers-handbook.pd) outlines the 6 incident phases.
+[SANS](docs/sans-incident-handlers-handbook.pdf) outlines the 6 incident phases.
 
 ![nist-incident-response-lifecycle.jpg](images/nist-incident-response-lifecycle.jpg)
 
@@ -76,7 +88,7 @@ Part of the Cyber Kill Chain. Defenders can measure the performance as well as t
 
 ![defense-maturity-scorecard-score.png](images/defense-maturity-scorecard-score.png)
 
-[Not-Sure-Who-Invented-This](Scorecard_Cybersecurity-Defense-Maturity-Evaluation.pdf) defines cybersecurity maturity across key domains.
+[Not-Sure-Who-Invented-This](docs/Scorecard_Cybersecurity-Defense-Maturity-Evaluation.pdf) defines cybersecurity maturity across key domains.
 
 * Decent tool for board maturity assessment
 
@@ -90,7 +102,7 @@ Part of the Cyber Kill Chain. Defenders can measure the performance as well as t
 
 ### ATT&CK
 
-[MITRE](https://attack.mitre.org/) ATT&CK is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. Enough gas been written on this.
+[MITRE](https://attack.mitre.org/) ATT&CK is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. Enough has been written on this.
 
 ### DeTT&CT
 
@@ -114,8 +126,7 @@ Popularized by Slack in this [blog post](https://slack.engineering/distributed-s
 
 ![risk-based-alerting.png](images/risk-based-alerting.png)
 
-Risk-based alerting (RBA) provides teams with a unique opportunity to pivot resources from traditionally reactive functions to proactive functions in the SOC.Apr 18, 2023
-Detection tagged with observations and metadata to produce a score. Alerts are then correlated by some grouping e.g. user, IP, source. Then alert if the correlated alerts are above a certain score.
+Risk-based alerting (RBA) provides teams with a unique opportunity to pivot resources from traditionally reactive functions to proactive functions in the SOC. Detections are tagged with observations and metadata to produce a score. Alerts are then correlated by some grouping e.g. user, IP, source, then fired if the correlated risk is above a certain score.
 
 * [Splunk article](https://www.splunk.com/en_us/blog/security/risk-based-alerting-the-new-frontier-for-siem.html)
 * [Video](https://conf.splunk.com/files/2018/recordings/say-goodbye-to-your-sec1479.mp4)
@@ -136,9 +147,9 @@ Purple teaming to create/inspire detections.
 Threat modeling works to identify, communicate, and understand threats and mitigations within the context of protecting something of value.
 
 * Article [owasp](https://owasp.org/www-community/Threat_Modeling)
-* Article by [infosecinstitute](https://resources.infosecinstitute.com/topic/top-threat-modeling-frameworks-stride-owasp-top-10-mitre-attck-framework/)
+* [Threat Modeling Manifesto](https://www.threatmodelingmanifesto.org/) - Values and principles for effective threat modeling.
 
-### Threat Inteligence
+### Threat Intelligence
 
 Threat intelligence is data that is collected, processed, and analyzed to understand a threat actor’s motives, targets, and attack behaviors. Threat intelligence enables us to make faster, more informed, data-backed security decisions and change their behavior from reactive to proactive in the fight against threat actors.
 
@@ -157,22 +168,41 @@ Threat intelligence is data that is collected, processed, and analyzed to unders
 * MacOS [LooBins macOS Binaries](https://www.loobins.io/)
 
 ## Resources
-* Detection Engineering
-  * https://github.com/infosecB/awesome-detection-engineering
-  * https://github.com/gracenolan/Notes/blob/master/interview-study-notes-for-security-engineering.md
-  * https://scrty.io/
-* IP/URL
-  * https://talosintelligence.com/reputation_center
-  * https://radar.cloudflare.com/scan
-  * https://whois.domaintools.com/
-  * https://virustotal.com/
-  * https://www.maxmind.com/en/geoip-databases
-  * https://urlscan.io/
-* Browser Extension
-  * https://crxcavator.io/
-* OSINT
-  * https://start.me/p/L1rEYQ/osint4all
-  * https://urlscan.io/ 
+
+### Detection Engineering
+
+* [Detection Engineering Weekly](https://www.detectionengineering.net/) - Zack Allen's newsletter (16k+ subscribers) curating the week's top detection engineering content, tools, and research. The best single way to stay current.
+* [Detection Engineering Maturity Matrix](https://detectionengineering.io/) - Kyle Bailey's matrix for measuring and benchmarking your detection function across people, process, and technology.
+* [Awesome Detection Engineering](https://github.com/infosecB/awesome-detection-engineering) - Community-curated master list of DE tools, blogs, and references.
+* [Awesome Detection Rules](https://github.com/jatrost/awesome-detection-rules) - Aggregated collection of open-source detection rule repos across SIEM/EDR platforms.
+* [Florian Roth's Blog](https://cyb3rops.medium.com/) - Deep, practical writing on detection rule quality, Sigma, and YARA from the creator of Sigma.
+* [Security Engineering Study Notes](https://github.com/gracenolan/Notes/blob/master/interview-study-notes-for-security-engineering.md) - Excellent prep notes covering detection/security engineering fundamentals.
+* [scrty.io](https://scrty.io/) - Curated security engineering reference and reading.
+* [The DFIR Report](https://thedfirreport.com/) - Real-world intrusion reports with the TTPs, artifacts, and detections you can turn into rules.
+
+### Threat Intelligence / Lookup (IP, URL, Domain, File)
+
+* [Cisco Talos Reputation Center](https://talosintelligence.com/reputation_center) - IP/domain reputation and email/web traffic insights.
+* [VirusTotal](https://www.virustotal.com/) - Multi-engine file, URL, domain, and IP analysis.
+* [urlscan.io](https://urlscan.io/) - Sandbox that records everything a URL does (requests, screenshots, DOM).
+* [Cloudflare Radar URL Scanner](https://radar.cloudflare.com/scan) - Free URL scanner with screenshots and tech detection.
+* [DomainTools Whois](https://whois.domaintools.com/) - Whois and domain registration lookups for enrichment/pivoting.
+* [MaxMind GeoIP](https://www.maxmind.com/en/geoip-databases) - IP geolocation and ASN databases for enrichment.
+* [AbuseIPDB](https://www.abuseipdb.com/) - Crowd-sourced IP abuse reporting and reputation checks.
+* [GreyNoise](https://viz.greynoise.io/) - Tells you which IPs are mass-scanning the internet vs. targeting you, great for alert noise reduction.
+* [Shodan](https://www.shodan.io/) - Search engine for internet-exposed hosts and services.
+
+### Mappings & Knowledge Bases
+
+* [MITRE ATT&CK Navigator](https://mitre-attack.github.io/attack-navigator/) - Visualize and annotate ATT&CK coverage layers.
+* [LOLBAS](https://lolbas-project.github.io/) - Living-off-the-land binaries, scripts, and libraries abused on Windows.
+* [GTFOBins](https://gtfobins.github.io/) - Unix binaries that can be abused to bypass local security restrictions.
+* [LOOBins](https://www.loobins.io/) - Living-off-the-land binaries for macOS.
+
+### OSINT
+
+* [OSINT4all (start.me)](https://start.me/p/L1rEYQ/osint4all) - Large curated OSINT tooling dashboard.
+* [OSINT Framework](https://osintframework.com/) - Tree of OSINT resources organized by data type.
 
 ## Notes
 
@@ -180,3 +210,13 @@ Threat intelligence is data that is collected, processed, and analyzed to unders
   * Atomic - Atomic indicators are those which cannot be broken down into smaller parts and retain their meaning in the context of an intrusion. Typical examples here are IP addresses, email addresses, and vulnerability identifiers.
   * Computed - Computed indicators are those which are derived from data involved in an incident. Common computed indicators include hash values and regular expressions.
   * Behavioral - Behavioral indicators are collections of computed and atomic indicators, often subject to qualification by quantity and possibly combinatorial logic. An example would be a statement such as ”the intruder would initially use a backdoor which generated network traffic matching [regular expression] at the rate of [some frequency] to [some IP address], and then replace it with one matching the MD5 hash [value] once access was established.”
+
+## Contributing
+
+Contributions are welcome and encouraged — this list gets better with more eyes on it.
+
+* Found a broken link, typo, or outdated resource? Open an [issue](https://github.com/erickatwork/threat-detection-engineering-reference/issues) or a pull request.
+* Want to add a framework, tool, or resource? Open a PR. Please keep entries concise, include a link, and add a one-line note on *why* it's useful (not just *what* it is).
+* Keep formatting consistent with the existing sections and place new entries under the most relevant heading.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details. If this reference saved you time, please ⭐ the repo so others can find it.
